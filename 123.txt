@@ -1,2 +1,2 @@
-Good morning Raja
-raja test 123
+echo "Good morning Raja"
+echo "raja test 123"
