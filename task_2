@@ -2,8 +2,7 @@ properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'h
 
 pipeline {
     agent any
-
-    stages {
+stages {
         stage('Build') {
             steps {
                 echo 'Building..'
