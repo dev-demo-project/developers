@@ -1,9 +1,8 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/dev4755/gitpractice/'], gitLabConnection(''), [$class: 'GitlabLogoProperty', repositoryName: '']])
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/dev-demo-project/developers/'], gitLabConnection(''), [$class: 'GitlabLogoProperty', repositoryName: ''], pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any
-
-    stages {
+stages {
         stage('Build') {
             steps {
                 echo 'Building..'
@@ -16,7 +15,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....success'
+                echo 'Deployed....Success.'
             }
         }
     }
