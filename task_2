@@ -1,4 +1,4 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/dev4755/gitpractice/blob/master/task_2/'], gitLabConnection(''), [$class: 'GitlabLogoProperty', repositoryName: ''], pipelineTriggers([cron('* * * * *')])])
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/dev-demo-project/developers/'], gitLabConnection(''), [$class: 'GitlabLogoProperty', repositoryName: ''], pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any
